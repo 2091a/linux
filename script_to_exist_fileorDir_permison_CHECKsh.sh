@@ -15,26 +15,18 @@ then
 
 	if [ $? -eq 0 ];then
 		echo "checking file permission"
-		if [ -r $file ];then
-			echo "file has read permison "
-		fi
-		 
-		if [ -w $file ];then
-                        echo "file has write permison "
-                fi
-
-		if [ -x $file ];then
-                        echo "file has exicute permison "
-                fi
-
+		 [ -r $file ] && echo "file has read permison "
+		 [ -w $file ] && echo "file has write permison "
+		 [ -x $file ] && echo "file has exicute permison "
 		fi
 
-		if [ -s $file ]; then
+		if [ -f $file ];then
+	         if  [ -s $file ]; then
 			echo "File has content"
 		else
 			echo "File is empty NO content found inside file"
 		fi
-
+		fi
 
 
 
