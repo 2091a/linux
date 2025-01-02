@@ -34,7 +34,7 @@ esac
 
 quit(){
 	echo "exiting program"
-exit 1
+exit 0
 }
 
 
