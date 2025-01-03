@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the directory path
-dir_path="/home/vboxuser"
+dir_path="/home/vboxuser/anshuldir"
 
 # Initialize counters
 file_count=0

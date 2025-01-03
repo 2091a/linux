@@ -5,7 +5,7 @@ echo "2 to print 222222222222222"
 echo "3 to print 333333333333333"
 echo "4 to print 44444444444444"
 echo "5 to exit"
-read input
+read -p "choise:" input
 hendlinput "$input" 
 
 }
